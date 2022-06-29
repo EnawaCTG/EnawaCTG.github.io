@@ -1,0 +1,257 @@
+:root {
+    --color-no: #f24e29;
+    --color-nc: #f2a057;
+    --color-a: #f2de77;
+    --color-mc: #aef2d9;
+    --color-mo: #04bf9d;
+  }
+  
+  .container.count.movil {
+    display: none;
+  }
+
+  
+  
+  /*Secion*/
+  
+  .one {
+    background-color: var(--color-mo);
+    height: 100vh;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .count {
+    padding-top: 12vw;
+  }
+  
+  /*Navbar*/
+  
+  .navbar {
+    background-color: transparent !important;
+  }
+  
+  /*Textos*/
+  
+  .titulouno {
+    font-weight: 700;
+    color: var(--color-mc);
+    font-size: 4vw;
+  }
+  
+  .resaltador {
+    color: white !important;
+  }
+  
+  p {
+    font-size: 4vw;
+    font-weight: 500;
+    color: var(--color-mc) !important;
+    margin: 0 !important;
+  }
+  
+  span {
+    color: white !important;
+    font-weight: 700;
+  }
+  
+  h6 {
+    color: black !important;
+  }
+  
+  span.de{
+    color: white !important;
+  }
+  
+  /*Objetos*/
+  .container {
+    padding-left: 0 !important;
+  }
+  
+  /*Waves*/
+  
+  .waveuno {
+    fill: white;
+    fill: linear-gradient(to bottom, white, transparent);
+    animation: waveuno 6s linear infinite;
+  }
+  @keyframes waveuno {
+    0% {
+      margin-bottom: 1vw;
+      opacity: 0.2;
+    }
+  
+    30% {
+      opacity: 1;
+    }
+  
+    100% {
+      margin-bottom: 0;
+      opacity: 0;
+    }
+  }
+  
+  .wavetres {
+    background-color: linear-gradient();
+    animation: wavetres 6s linear infinite;
+  }
+  @keyframes wavetres {
+    0% {
+      margin-bottom: 1.5vw;
+      opacity: 0;
+    }
+  
+    50% {
+      margin-bottom: 1vw;
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .wavecuatro {
+    animation: wavecuatro 6s linear infinite;
+  }
+  @keyframes wavecuatro {
+    0% {
+      margin-bottom: 0;
+    }
+  
+    50% {
+      margin-bottom: 0.7vw;
+    }
+  
+    100% {
+      margin-bottom: 0;
+    }
+  }
+  /*Shaders*/
+  
+  .wavecinco {
+    bottom: 0.5vw;
+  }
+  
+  .waveseis {
+    bottom: 3vw;
+  }
+  
+  @media (max-width: 520px) {
+  
+    .container.count{
+      display: none;
+    }
+  
+    .container.count.movil{
+      display: contents;
+    }
+  
+    .container.textos{
+      padding-top: 6vw;
+      padding-left: 6vw !important;
+    }
+  
+    .container.detallesmobile{
+      padding-left: 6vw !important;
+      padding-bottom: 18vw;
+      z-index: 8;
+    }
+  
+    .ddia{
+      padding-bottom: 2vw !important;
+      
+    }
+  
+    .titulouno{
+      color: var(--color-mc);
+      font-weight: bold;
+      font-size: 8vw;
+    }
+  
+    .mensajitomobile{
+      color: white!important;
+    }
+  
+    /*Estilos de texto*/
+  
+    #dias{
+      font-size: 22vw;
+      font-weight: bold;
+      padding: 0 !important;
+      color: var(--color-mc) !important;
+    }
+  
+    span.dia{
+      color: white!important;
+      font-size: 6vw;
+      position: relative;
+      top: 7vw;
+    }
+  
+    .hora{
+      font-size: 5vw;
+      font-weight: 700;
+      color: var(--color-mc);
+    }
+  
+    #horas{
+      color: white !important;
+    }
+  
+    .min{
+      font-size: 5vw;
+      font-weight: 700;
+      color: var(--color-mc);
+    }
+  
+    #minutos{
+      color: white !important;
+    }
+  
+    span.typed-cursor{
+      color: white !important;
+    }
+  
+    .seg{
+      font-size: 5vw;
+      font-weight: 700;
+      color: var(--color-mc);
+    }
+  
+    #segundos{
+      color: white !important;
+    }
+  
+    .contcir{
+      width: 100vw;
+      height: 150vw;
+      overflow: hidden;
+      display: flex;
+      z-index: 1;
+    }
+  
+    .circulomobile{
+      width: 140vw; 
+      height: 140vw;
+      position: absolute;
+      top: 5vw; 
+      left: 40vw;
+      border-radius: 100vw;
+      background: linear-gradient(to bottom,#04bf9d, #aef2d9);
+      animation: rotation 7s infinite linear;
+  
+    }
+  
+    @keyframes rotation {
+      from{
+        transform: rotate(0deg);
+      }
+      to{
+        transform: rotate(359deg);
+      }
+    }
+  
+  
+  
+  }

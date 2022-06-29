@@ -1,0 +1,448 @@
+:root {
+    --main-c: #04BF9D;
+    --sc: white;
+    --cc: black;
+    --ae: #F2DE77;
+    --mc: #AEF2D9;
+}
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+}
+
+/*Estilos de las secciones*/
+
+/*Estilos del header*/
+
+.header{
+    padding: 11vw 10vw 0 10vw;
+    height: 41vw;
+    background-color: var(--main-c);
+    justify-content: center;
+    align-items: center;
+}
+
+/*Estilos de la primera seccion de informacion sobre la app*/
+
+.info-uno{
+    position: relative;
+    display: grid;
+    padding: 1vw 10vw 2vw 10vw;
+    height: 10vh;
+    background-color: #F2DE77;
+}
+
+/*Textos de la primera seccion de info*/
+
+.intro-info{
+    font-weight: 600;
+    justify-self: center;
+    font-size: 1.6vw;
+
+    z-index: 2;
+}
+
+.flecha-abajo-icono{
+    width: 6vh;
+}
+
+
+/*Estilo de la Navbar*/
+.navbar{
+    background-color: var(--main-c) !important;
+    padding: 1vw 10vw 0 10vw;
+}
+
+.navbar-brand{
+    font-weight: 600;
+    color: var(--sc);
+}
+
+.nav-link{
+    color: var(--sc);
+    text-decoration: none !important;
+}
+
+.list{
+    display: none;
+}
+
+.links{
+    text-decoration: none;
+}
+
+.navbar-boton{
+    display: none;
+}
+
+/*Textos del header*/
+
+.tituloh{
+    position: relative;
+    text-align: center;
+
+    font-weight: 600;
+    font-size: 5.6vw;
+    color: var(--sc);
+    z-index: 2 !important;
+    
+}
+
+.ths{
+    position: relative;
+    color: var(--mc);
+    z-index: 2 !important;
+}
+
+.paheader{
+    position: relative;
+    text-align: center;
+
+    font-size: 1.8vw;
+    color: var(--sc);
+    z-index: 2 !important;
+   
+}
+
+.mredes{
+    text-align: center;
+    color: var(--sc);
+    z-index: 2 !important;
+    
+}
+
+
+/*Estilos del logo que aparece de fondo en el header*/
+#logoh{
+    width: 55vw;
+    opacity: 0.35;
+    z-index: 1 !important;
+
+}
+
+/*Boton de redes*/
+
+.link-redes-boton{
+    position: relative;
+    margin-top: 1.5vw;
+    text-decoration: none;
+    
+    width: 18vh;
+
+    height: 5vh;
+    transition: height .5s;
+    z-index: 2;
+
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: transparent !important;
+    transition: background-color .5s;
+    display: grid;
+    justify-content: center;
+    color: white;
+
+    padding-top: 0.6vh;
+
+}
+
+.link-redes-boton:hover{
+    margin-top: 1.5vw;
+    text-decoration: none;
+    
+    width: 20vh;
+    height: 6vh;
+    z-index: 2;
+
+    border-radius: 10px;
+    background-color: white !important;
+    display: grid;
+    justify-content: center;
+    color: #04BF9D;
+
+    padding-top: 1.1vh;
+
+}
+
+.link-redes{
+    text-decoration: none;
+    font-size: 2vh;
+    
+}
+
+
+
+@media (max-width: 991.2px) {
+
+    /*Off canvas boton*/
+
+
+    .navbar-boton{
+        display: grid;
+        background-color: transparent !important;
+        border: none;
+        
+    }
+
+    .bi-list{
+        color: white;
+        border: 0;
+        width: 3vh;
+        
+    }
+
+    /*Estilos del Offcanvas*/
+
+    .offcaanvas-body{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10vh 0 0 0;
+    }
+
+    .ofb{
+        display: none;
+    }
+
+    /*Offcanvas-header*/
+
+    .offcanvas-title{
+        font-weight: bold;
+    }
+
+    /*Estilos de elementos en el offcanavs*/
+
+
+    .list{
+        display: grid;
+        margin: 0;
+        padding: 2vh;
+    }
+
+    .list-group-item{
+        color: var(--cc);
+        text-decoration: none !important;
+
+        font-size: 4.5vh;
+        font-weight: 600;
+
+        margin-bottom: 6vh;
+
+    }
+
+    .links{
+        text-decoration: none;
+        color: black !important;
+    }
+
+    .bi-arrow-right-short{
+        color: var(--cc);
+        margin-left: 0.8vh !important;
+    }
+
+    /*Elementos del header*/
+
+    .link-redes{
+        text-decoration: none;
+        font-size: 1.6vh;
+        
+    }
+
+    .link-redes-boton{
+        margin-top: 3vh;
+        padding-top: 1vh;
+
+        width: 16vh;
+        height: 5vh;
+    }
+
+    .link-redes-boton{
+
+        margin-top: 3vh;
+        text-decoration: none;
+    
+        width: 16vh;
+
+        height: 4vh;
+        transition: height .5s !important;
+        z-index: 2;
+
+        border-radius: 10px;
+        border: 2px solid white;
+        background-color: transparent !important;
+        transition: background-color .5s;
+        display: grid;
+        justify-content: center;
+        color: white;
+
+        padding-top: 0.55vh;
+    }
+
+    .link-redes-boton:hover{
+
+        margin-top: 3vh;
+        text-decoration: none;
+    
+        width: 20vh;
+        transition: width .5s !important;
+
+        height: 5.2vh;
+        transition: height .5s;
+        z-index: 2;
+
+        border-radius: 10px;
+        border: 2px solid white;
+        background-color: white !important;
+        transition: background-color .5s;
+        display: grid;
+        justify-content: center;
+        color: var(--main-c);
+
+        padding-top: 0.91vh;
+    }
+
+}
+
+
+/*Version mobile*/
+@media (max-width: 520px) {
+    
+    /*Estilos Navbar*/
+    .navbar{
+        padding: 1vw 1vw 1vw 1vh;
+    }
+
+    .nav-link{
+        color: var(--cc);
+    }
+
+    .ofb{
+        display: none;
+    }
+
+    .offcaanvas-body{
+        padding-top: 10vh;
+    }
+
+    .list{
+        display: grid;
+    }
+
+    .list-group-item{
+        color: var(--cc);
+        text-decoration: none !important;
+
+        font-size: 4.5vh;
+        font-weight: 600;
+
+        margin-bottom: 4vh;
+
+    }
+
+    .bi-arrow-right-short{
+        color: var(--cc);
+        margin-left: 0vh !important;
+    }
+
+    /*Icono del boton del vabar*/
+
+    .navbar-boton{
+        display: grid;
+        background-color: transparent !important;
+        border: none;
+        
+    }
+
+    .bi-list{
+        color: white;
+        border: 0;
+        width: 4vh;
+        
+    }
+
+    
+
+    .links{
+        text-decoration: none;
+        color: black !important;
+    }
+
+    /*Estilos del header*/
+
+    .header{
+        min-height: 92.2vh;
+        height: 190vw;
+        background-color: var(--main-c);
+        padding: 54vh 0 0 0vh;
+    }
+
+    .tituloh{
+        color: var(--mc);
+
+        font-size: 14vw;
+        font-weight: 600;
+        line-height: 15vw;
+        text-align: start;
+        padding-right: 20vw;
+    }
+
+    .ths{
+        color: var(--sc);
+    }
+
+    .paheader{
+        color: var(--sc);
+
+        font-size: 4.5vw;
+        line-height: 6.5vw;
+        text-align: start;
+    }
+
+    .link-redes-boton{
+
+        margin-top: 1.8vh;
+        text-decoration: none;
+    
+        width: 18vh;
+        transition: width .5s;
+
+        height: 5vh;
+        transition: height .5s !important;
+        z-index: 2;
+
+        border-radius: 10px;
+        border: 2px solid white;
+        background-color: transparent !important;
+        transition: background-color .5s;
+        display: grid;
+        justify-content: center;
+        color: white;
+
+        padding-top: 0.91vh;
+    }
+
+    .link-redes-boton:hover{
+
+        margin-top: 1.8vh;
+        text-decoration: none;
+    
+        width: 20vh;
+        transition: width .5s !important;
+
+        height: 5.2vh;
+        transition: height .5s;
+        z-index: 2;
+
+        border-radius: 10px;
+        border: 2px solid white;
+        background-color: white !important;
+        transition: background-color .5s;
+        display: grid;
+        justify-content: center;
+        color: white;
+
+        padding-top: 0.91vh;
+    }
+
+}
