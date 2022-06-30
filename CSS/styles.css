@@ -52,6 +52,7 @@ body {
 
 /*Estilo de la Navbar*/
 .navbar{
+    position: relative;
     background-color: var(--main-c) !important;
     padding: 1vw 10vw 0 10vw;
 }
@@ -297,7 +298,7 @@ body {
         transition: background-color .5s;
         display: grid;
         justify-content: center;
-        color: var(--main-c);
+        color: #04BF9D;
 
         padding-top: 0.91vh;
     }
@@ -371,20 +372,19 @@ body {
     /*Estilos del header*/
 
     .header{
-        min-height: 92.2vh;
-        height: 190vw;
+        height: 90vh;
         background-color: var(--main-c);
-        padding: 54vh 0 0 0vh;
+        padding: 55vh 0 0 0vh;
     }
 
     .tituloh{
         color: var(--mc);
 
-        font-size: 14vw;
+        font-size: 12vw;
         font-weight: 600;
-        line-height: 15vw;
+        
         text-align: start;
-        padding-right: 20vw;
+        
     }
 
     .ths{
@@ -405,7 +405,6 @@ body {
         text-decoration: none;
     
         width: 18vh;
-        transition: width .5s;
 
         height: 5vh;
         transition: height .5s !important;
@@ -428,7 +427,6 @@ body {
         text-decoration: none;
     
         width: 20vh;
-        transition: width .5s !important;
 
         height: 5.2vh;
         transition: height .5s;
@@ -440,7 +438,7 @@ body {
         transition: background-color .5s;
         display: grid;
         justify-content: center;
-        color: white;
+        color: #04BF9D;
 
         padding-top: 0.91vh;
     }
