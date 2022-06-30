@@ -11,6 +11,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     padding: 0;
+    background-color: #04BF9D;
 }
 
 /*Estilos de las secciones*/
@@ -18,8 +19,8 @@ body {
 /*Estilos del header*/
 
 .header{
-    padding: 11vw 10vw 0 10vw;
-    height: 41vw;
+    padding: 11vw 9vw 0 9vw;
+    height: 38.2vw;
     background-color: var(--main-c);
     justify-content: center;
     align-items: center;
@@ -53,8 +54,9 @@ body {
 /*Estilo de la Navbar*/
 .navbar{
     position: relative;
-    background-color: var(--main-c) !important;
+    background-color: transparent !important;
     padding: 1vw 10vw 0 10vw;
+    z-index: 2 !important;
 }
 
 .navbar-brand{
@@ -172,6 +174,52 @@ body {
     font-size: 2vh;
     
 }
+
+/*Informacion uno*/
+
+.informacion-uno{
+    display: flex;
+    padding: 10vh 9vw 0 9vw;
+    height: 41vw;
+    background-color: var(--sc);
+    
+    
+}
+
+.contenedor-mensaje-intro{
+    display: none;
+}
+
+.informacion-uno{
+    padding-top: 20vh;
+    height: 92vh;
+}
+
+.ilustracion-botones{
+    width: 54vw;
+
+}
+
+.textos-botones{
+    width: 28vw;
+    
+}
+
+.titulo-textos-botones{
+    font-weight: bold;
+    font-size: 1.92vw;
+    line-height: 3vw;
+}
+
+.parrafo-textos-botones{
+    font-size: 1.2vw;
+    line-height: 1.92vw;
+}
+
+#Botones{
+    width: 500px;
+}
+
 
 
 
@@ -369,6 +417,7 @@ body {
         color: black !important;
     }
 
+
     /*Estilos del header*/
 
     .header{
@@ -376,6 +425,8 @@ body {
         background-color: var(--main-c);
         padding: 55vh 0 0 0vh;
     }
+
+    /*Textos del header*/
 
     .tituloh{
         color: var(--mc);
@@ -443,4 +494,7 @@ body {
         padding-top: 0.91vh;
     }
 
+    .informacion-uno{
+        height: 40vh;
+    }
 }
