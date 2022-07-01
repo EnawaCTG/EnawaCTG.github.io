@@ -182,6 +182,7 @@ body {
     padding: 10vh 9vw 0 9vw;
     height: 41vw;
     background-color: var(--sc);
+    align-items: center;
     
     
 }
@@ -190,10 +191,6 @@ body {
     display: none;
 }
 
-.informacion-uno{
-    padding-top: 20vh;
-    height: 92vh;
-}
 
 .ilustracion-botones{
     width: 54vw;
@@ -207,8 +204,9 @@ body {
 
 .titulo-textos-botones{
     font-weight: bold;
-    font-size: 1.92vw;
-    line-height: 3vw;
+    font-size: 3vw;
+    inline-size: 25vw;
+    
 }
 
 .parrafo-textos-botones{
@@ -217,7 +215,7 @@ body {
 }
 
 #Botones{
-    width: 500px;
+    width: 34vw;
 }
 
 
@@ -495,6 +493,29 @@ body {
     }
 
     .informacion-uno{
-        height: 40vh;
+        height: 90vh;
+        text-align: center;
+        padding: 0;
+    }
+
+    .col{
+        width: 100%;
+    }
+
+    .titulo-textos-botones{
+        font-weight: bold;
+        font-size: 8vw;
+        margin: 0;
+        inline-size: auto;
+        
+    }
+    
+    .parrafo-textos-botones{
+        font-size: 1.2vw;
+        line-height: 1.92vw;
+    }
+    
+    #Botones{
+        width: 82vw;
     }
 }
