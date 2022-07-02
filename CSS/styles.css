@@ -1,7 +1,7 @@
 :root {
     --main-c: #04BF9D;
     --sc: white;
-    --cc: black;
+    --cc: #071412;
     --ae: #F2DE77;
     --mc: #AEF2D9;
 }
@@ -14,27 +14,40 @@ body {
     background-color: #04BF9D;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+/*Scrollbar*/
+
+body::-webkit-scrollbar {
+    background: #071412 !important;
+    width: 8px;
+    animation-name: scrollbar;
+    animation-duration: 2s;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: white;
+    border-radius: 5px;
+}
+
+
+
+
 /*Estilos de las secciones*/
 
 /*Estilos del header*/
 
 .header{
     padding: 11vw 9vw 0 9vw;
-    height: 38.2vw;
+    height: 92.5vh;
     background-color: var(--main-c);
     justify-content: center;
     align-items: center;
 }
 
 /*Estilos de la primera seccion de informacion sobre la app*/
-
-.info-uno{
-    position: relative;
-    display: grid;
-    padding: 1vw 10vw 2vw 10vw;
-    height: 10vh;
-    background-color: #F2DE77;
-}
 
 /*Textos de la primera seccion de info*/
 
@@ -53,10 +66,10 @@ body {
 
 /*Estilo de la Navbar*/
 .navbar{
-    position: relative;
+    
     background-color: transparent !important;
-    padding: 1vw 10vw 0 10vw;
-    z-index: 2 !important;
+    padding: 3vh 2vw 0 2vw;
+    z-index: 8 !important;
 }
 
 .navbar-brand{
@@ -64,9 +77,24 @@ body {
     color: var(--sc);
 }
 
+.navbar-brand:hover{
+    color: white;
+}
+
 .nav-link{
     color: var(--sc);
     text-decoration: none !important;
+    border-bottom: 2px solid;
+    border-color: transparent;
+    transition: border-color .2s;
+}
+
+.nav-link:hover{
+    color: white;
+    border-bottom: 2px solid;
+    border-color: white;
+    
+    
 }
 
 .list{
@@ -121,7 +149,7 @@ body {
 /*Estilos del logo que aparece de fondo en el header*/
 #logoh{
     width: 55vw;
-    opacity: 0.35;
+    opacity: 0.5;
     z-index: 1 !important;
 
 }
@@ -175,50 +203,66 @@ body {
     
 }
 
+.titulo-conoce{
+    color: var(--sc);
+}
+
 /*Informacion uno*/
 
 .informacion-uno{
     display: flex;
-    padding: 10vh 9vw 0 9vw;
-    height: 41vw;
-    background-color: var(--sc);
-    align-items: center;
-    
-    
-}
+    position: relative;
+    z-index: 2;
+    padding: 8vh 9vw 0 9vw;
+    height: 100vh;
+    background-color: #071412;
 
-.contenedor-mensaje-intro{
-    display: none;
-}
-
-
-.ilustracion-botones{
-    width: 54vw;
-
-}
-
-.textos-botones{
-    width: 28vw;
     
 }
 
-.titulo-textos-botones{
-    font-weight: bold;
-    font-size: 3vw;
-    inline-size: 25vw;
-    
+.titulo-info-uno{
+    position: relative;
+    color: white;
+    font-weight: 600;
+    font-size: 6vw;
+    line-height: 9vw;
+    text-align: start;
+    inline-size: 50vw;
+    z-index: 3;
 }
 
-.parrafo-textos-botones{
+.parrafo-info-uno{
+    color: white;
     font-size: 1.2vw;
-    line-height: 1.92vw;
+    line-height: 1.9;
+    inline-size: 36vw;
 }
 
-#Botones{
-    width: 34vw;
+.contenedor-caracteristicas {
+    position: absolute;
+    bottom: 5vh;
+    right: 9vw;
+    width: 60%;
+    height: 20vh;
+    
 }
 
+.caracteristicas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    
+}
 
+.titulo-caracteristicas{
+    color: white;
+}
+
+.parrafo-caracteristicas{
+    color: white;
+    justify-content: center;
+    text-align: end;
+}
 
 
 @media (max-width: 991.2px) {
@@ -517,5 +561,63 @@ body {
     
     #Botones{
         width: 82vw;
+    }
+
+    .informacion-uno{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        position: relative;
+        z-index: 2;
+        padding: 1vh 1vw 0vh 1vw;
+        height: 100vh;
+        background-color: #071412;
+        justify-content: center;
+        
+    }
+
+    .titulo-info-uno{
+        position: relative;
+        color: white;
+        font-weight: 600;
+        width: 100%;
+        font-size: 10vw;
+        line-height: 9vw;
+        justify-content: center;
+        text-align: center;
+        z-index: 3;
+    }
+
+    article{
+        height: 30vh;
+    }
+    
+    .parrafo-info-uno{
+        color: white;
+        width: 100%;
+        font-size: 3.5vw;
+        line-height: 1.9;
+    }
+
+    .contenedor-caracteristicas {
+        position: relative;
+        padding: 0;
+    }
+    
+    .caracteristicas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 1vh;
+    }
+    
+    .titulo-caracteristicas{
+        color: white;
+    }
+    
+    .parrafo-caracteristicas{
+        color: white;
+        justify-content: center;
+        text-align: center;
     }
 }
