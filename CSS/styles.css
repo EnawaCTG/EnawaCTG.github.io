@@ -11,7 +11,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     padding: 0;
-    background-color: #04BF9D;
+    background-color: #071412;
 }
 
 html{
@@ -31,8 +31,6 @@ body::-webkit-scrollbar-thumb{
     background: white;
     border-radius: 5px;
 }
-
-
 
 
 /*Estilos de las secciones*/
@@ -109,6 +107,11 @@ body::-webkit-scrollbar-thumb{
     display: none;
 }
 
+@keyframes tituloh-opacidad {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
 /*Textos del header*/
 
 .tituloh{
@@ -119,6 +122,8 @@ body::-webkit-scrollbar-thumb{
     font-size: 5.6vw;
     color: var(--sc);
     z-index: 2 !important;
+    animation: tituloh-opacidad;
+    animation-duration: 1.5s;
     
 }
 
@@ -135,6 +140,8 @@ body::-webkit-scrollbar-thumb{
     font-size: 1.8vw;
     color: var(--sc);
     z-index: 2 !important;
+    animation: tituloh-opacidad;
+    animation-duration: 2s;
    
 }
 
@@ -176,6 +183,8 @@ body::-webkit-scrollbar-thumb{
     color: white;
 
     padding-top: 0.6vh;
+    animation: tituloh-opacidad;
+    animation-duration: 2s;
 
 }
 
@@ -193,7 +202,7 @@ body::-webkit-scrollbar-thumb{
     justify-content: center;
     color: #04BF9D;
 
-    padding-top: 1.1vh;
+    padding-top: 1.2vh;
 
 }
 
@@ -210,15 +219,16 @@ body::-webkit-scrollbar-thumb{
 /*Informacion uno*/
 
 .informacion-uno{
-    display: flex;
+    display: grid;
+    flex-wrap: wrap;
     position: relative;
     z-index: 2;
-    padding: 8vh 9vw 0 9vw;
+    padding: 12vh 9vw 0 9vw;
     height: 100vh;
     background-color: #071412;
-
-    
 }
+
+
 
 .titulo-info-uno{
     position: relative;
@@ -238,30 +248,30 @@ body::-webkit-scrollbar-thumb{
     inline-size: 36vw;
 }
 
-.contenedor-caracteristicas {
-    position: absolute;
-    bottom: 5vh;
-    right: 9vw;
-    width: 60%;
-    height: 20vh;
+
+.contenerdor-detalles-caracteristicas{
     
+    margin-top: 12vh;
 }
 
-.caracteristicas{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: end;
-    
-}
 
 .titulo-caracteristicas{
     color: white;
+    font-size: 1.5vw;
+    text-align: end;
 }
 
 .parrafo-caracteristicas{
     color: white;
-    justify-content: center;
+    justify-content: end;
     text-align: end;
+    font-size: 1vw;
+}
+
+.emoji{
+    position: absolute;
+    width: 300px;
+    
 }
 
 
@@ -391,6 +401,67 @@ body::-webkit-scrollbar-thumb{
         color: #04BF9D;
 
         padding-top: 0.91vh;
+    }
+
+    .informacion-uno{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction:initial;
+        z-index: 2;
+        padding: 11vh 2vw 0vh 2vw;
+        height: 100vh;
+        background-color: #071412;
+        justify-content: center;
+        
+    }
+
+    .titulo-info-uno{
+        position: relative;
+        color: white;
+        font-weight: 600;
+        width: 100%;
+        font-size: 5.5vw;
+        line-height: 9vw;
+        justify-content: center;
+        text-align: center;
+        z-index: 3;
+    }
+    
+    .parrafo-info-uno{
+        color: white;
+        font-size: 2.2vw;
+        text-align: center;
+        line-height: 1.9;
+        width: 100%;
+    }
+
+    .detalles-caracteristicas{
+        margin-top: 0vh;
+        align-items: center;
+        padding-top: 0;
+    }
+    
+    .caracteristicas{
+        
+        width: 100%;
+    }
+
+    .caracteristica{
+        padding-top: 0;
+        margin-bottom: 4vh;
+    }
+    
+    .titulo-caracteristicas{
+        font-size: 3vw;
+        text-align: center;
+        color: white;
+        width: 100%;
+    }
+    
+    .parrafo-caracteristicas{
+        text-align: center;
+        font-size: 2vw;
+        line-height: 1.6;
     }
 
 }
@@ -566,10 +637,9 @@ body::-webkit-scrollbar-thumb{
     .informacion-uno{
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
-        position: relative;
+        flex-direction:initial;
         z-index: 2;
-        padding: 1vh 1vw 0vh 1vw;
+        padding: 11vh 2vw 0vh 2vw;
         height: 100vh;
         background-color: #071412;
         justify-content: center;
@@ -587,37 +657,40 @@ body::-webkit-scrollbar-thumb{
         text-align: center;
         z-index: 3;
     }
-
-    article{
-        height: 30vh;
-    }
     
     .parrafo-info-uno{
         color: white;
-        width: 100%;
         font-size: 3.5vw;
         line-height: 1.9;
+        width: 100%;
     }
 
-    .contenedor-caracteristicas {
-        position: relative;
-        padding: 0;
+    .detalles-caracteristicas{
+        margin-top: 0vh;
+        align-items: center;
+        padding-top: 0;
     }
     
     .caracteristicas{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding-top: 1vh;
+        
+        width: 100%;
+    }
+
+    .caracteristica{
+        padding-top: 0;
+        margin-bottom: 4vh;
     }
     
     .titulo-caracteristicas{
+        font-size: 6vw;
+        text-align: center;
         color: white;
+        width: 100%;
     }
     
     .parrafo-caracteristicas{
-        color: white;
-        justify-content: center;
         text-align: center;
+        font-size: 3.2vw;
+        line-height: 1.6;
     }
 }
